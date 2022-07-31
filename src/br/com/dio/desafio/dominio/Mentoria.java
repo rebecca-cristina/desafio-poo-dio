@@ -10,6 +10,9 @@ public class Mentoria extends Conteudo{
     public double calcularXp() {
         return XP_PADRAO + 20d;
     }
+    public double calcularHorasEstudadas() {
+        return 0;
+    }
 
     public Mentoria() {
     }

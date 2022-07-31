@@ -25,17 +25,27 @@ public class Dev {
     public double calcularTotalXp() {
         Iterator<Conteudo> iterator = this.conteudosConcluidos.iterator();
         double soma = 0;
-        while(iterator.hasNext()){
+        while (iterator.hasNext()) {
             double next = iterator.next().calcularXp();
             soma += next;
         }
         return soma;
+    }
 
+    public double calcularCargaHoraria() {
+        Iterator<Conteudo> iterator1 = this.conteudosConcluidos.iterator();
+        double soma1 = 0;
+        while (iterator1.hasNext()) {
+                double next = iterator1.next().calcularHorasEstudadas();
+                soma1 += next;
+            }
+            return soma1;
+        }
         /*return this.conteudosConcluidos
                 .stream()
                 .mapToDouble(Conteudo::calcularXp)
                 .sum();*/
-    }
+
 
 
     public String getNome() {

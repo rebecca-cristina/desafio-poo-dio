@@ -8,6 +8,7 @@ public class Curso extends Conteudo{
     public double calcularXp() {
         return XP_PADRAO * cargaHoraria;
     }
+    public double calcularHorasEstudadas() { return totalCargaHoraria * cargaHoraria;}
 
     public Curso() {
     }
